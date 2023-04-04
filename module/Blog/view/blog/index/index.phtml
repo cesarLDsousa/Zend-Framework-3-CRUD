@@ -6,7 +6,7 @@ $this->headTitle('Blog');
   main {
     border: 2px solid white;
     border-radius: 15px;
-    padding: 15px;
+    padding: 15px 20px 0px 20px;
   }
   h1 {
     padding: 15px 0px;
@@ -23,7 +23,7 @@ $this->headTitle('Blog');
         <th>Título</th>
         <th>Descrição</th>
         <th></th><th></th>
-        <th><a class="btn btn-outline-primary px-3 py-2" href="<?php echo $this->url('post',['action' => 'add', 'id'=> $post->id]) ?>">Adicionar</a></th>
+        <th><a class="btn btn-outline-success px-3 py-2" href="<?php echo $this->url('post',['action' => 'add', 'id'=> $post->id]) ?>">Adicionar</a></th>
       </tr>
     </thead>
     <tbody>
