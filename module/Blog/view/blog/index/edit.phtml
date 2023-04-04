@@ -9,10 +9,11 @@ $content->setAttribute('class','form-control');
 $submit = $form->get('submit');
 $submit->setAttribute('class','btn btn-outline-primary');
 
-$form->setAttribute('action', $this->url('post', ['action'=>'add']));
+$form->setAttribute('action', $this->url('post', ['action'=>'edit', 'id' => $id]));
 $form->prepare();
 
 echo $this->form()->openTag($form);
+
 ?>
 <style>
     main {
@@ -25,9 +26,8 @@ echo $this->form()->openTag($form);
 </style>
 
 <main>
-
-<h1>Adicionar</h1>
-
+    <h1>Editar</h1>
+    
     <div class="form-group">
         <?=$this->formLabel($title);?>
         <?=$this->formElement($title);?>
@@ -37,10 +37,11 @@ echo $this->form()->openTag($form);
         <?=$this->formLabel($content);?>
         <?=$this->formElement($content);?>
     </div>
-    
+
     <?php
         echo $this->formSubmit($submit);
         echo $this->formHidden($form->get('id'));
         echo $this->form()->closeTag();
     ?>
 </main>
+

@@ -16,6 +16,13 @@
             ->prependStylesheet($this->basePath('css/bootstrap.min.css'))
         ?>
 
+        <style>
+        body {
+            background-color: #2D2727;
+            color: white;
+        }
+        </style>
+
         <!-- Scripts -->
         <?= $this->inlineScript()
             ->prependFile($this->basePath('js/bootstrap.min.js'))
