@@ -13,8 +13,9 @@
 
  //lista de modulos pra procurar
 return [
+    'Zend\Cache',
+    'Zend\Paginator',
     'Zend\Log',
-    'Zend\Db',
     'Zend\Mvc\Plugin\FilePrg',
     'Zend\Mvc\Plugin\FlashMessenger',
     'Zend\Mvc\Plugin\Identity',
@@ -27,6 +28,8 @@ return [
     'Zend\Filter',
     'Zend\Router',
     'Zend\Validator',
+    'DoctrineModule',
+    'DoctrineORMModule',
     'Application',
     'Blog',
 ];
